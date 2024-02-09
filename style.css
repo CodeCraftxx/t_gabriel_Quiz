@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(50, 41, 169);
+  background: linear-gradient(270deg, rgb(62, 53, 186)10%, rgb(130, 83, 177) 50% , rgb(119, 79, 128) );
+  font-family: 'Poppins', sans-serif;
+}
+
+.quiz{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(190deg, rgba(98, 89, 222, 0.79)40%, rgb(167, 107, 227)  , rgb(211, 143, 226) 100% );
+  box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+.score{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50px;
+  box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  border: 2px solid;
+}
+.score h2{
+  font-size: 20px;
+  padding: 0px 20px;
+  border-radius: 50px;
+  font-weight: 200;
+  background: rgb(81, 50, 140);
+}
+.score h1{
+  position: relative;
+  margin-bottom: -20px;
+  bottom: 10px;
+  font-size: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.score h1:hover{
+  font-size: 35px;
+  bottom: 20px;
+  color: rgb(250, 200, 2);
+}
+.game{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.game h2{
+  font-size: 20px;
+}
+.game p{
+  font-size: 18px;
+  font-weight: 600;
+  background-image: url(fondo\ morado.jpeg);
+  height: 140px;
+  width: 80%;
+  margin: 10px auto 0;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  line-height: 140px;
+  justify-content: center;
+  text-align: center;
+}
+button{
+  height: 50px;
+  display: block;
+  margin: 17px auto 0;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 2px 7px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ;
+}
+.btn{
+  width: 60%;
+  color: rgba(85, 25, 141, 0.803);
+}
+.btn:hover:not([disabled]){
+  width: 62%;
+  background: rgb(246, 214, 87);
+  color: #fff;
+}
+.btn:disabled{
+  cursor:default;
+}
+#answer-buttons{
+  margin-top: 40px;
+}
+#next{
+  width: 25%;
+  background: rgba(94, 43, 142, 0.803);
+  color: #fff;
+  margin-top: 30px;
+}
+.correct{
+  background: rgb(30, 222, 16);
+  color: #fff;
+}
+.incorrect{
+  background: rgb(234, 27, 27);
+  color: #fff;
+}
+
+@media screen and (max-width:768px) {
+  .score h1{
+    font-size: 25px;
+    top: -6px;
+  }
+  .score h1:hover{
+    font-size: 27px;
+  }
+  .score h2{
+    font-size: 18px;
+  }
+  .game p{
+    font-size: 15px;
+    width: 90%;
+  }
+  .quiz{
+    width: 70%;
+  }
+}
+@media screen and (max-width:820px) {
+  .score h1{
+    font-size: 25px;
+    top: -6px;
+  }
+  .score h1:hover{
+    font-size: 27px;
+  }
+  .score h2{
+    font-size: 18px;
+  }
+  .game p{
+    font-size: 15px;
+    width: 90%;
+  }
+  .quiz{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .quiz{
+    width: 100%;
+    height: 100%;
+  }
+  .score{
+    margin-top: 10%;
+  }
+  .score h1{
+    font-size: 15px;
+    top: -6px;
+  }
+  .score h1:hover{
+    font-size: 17px;
+  }
+  .score h2{
+    font-size: 10px;
+    padding: 0 8px;
+  }
+  .game{
+    margin-top: 10%;
+  }
+  .game h2{
+    font-size: 15px;
+  }
+  .game p{
+    font-size: 14px;
+    width: 95%;
+  }
+  .game button{
+    font-size: 12px;
+    height: 40px;
+  }
+  #next{
+    width: 90px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-height: 433px){
+  .quiz{
+    height: 100%;
+    width: 100%;
+  }
+  .score{
+    width: 70%;
+    margin: 8px auto 0;
+  }
+  .score h2{
+    font-size: 15px;
+  }
+  .score h1{
+    font-size: 20px;
+    position: relative;
+    bottom: 3px;
+  }
+  .score h1:hover{
+    font-size: 22px;
+    bottom: 1px;
+  }
+  .game{
+    margin: 10px;
+  }
+  .game h2{
+    font-size: 15px;
+  }
+  .game p{
+    height: 70px;
+    line-height: 80px;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    font-size: 12px;
+  }
+  .game button{
+    height: 25px;
+  }
+  #answer-buttons{
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #next{
+    margin-top: 10px;
+  }
+  .btn{
+    width: 40%;
+    font-size: 12px;
+    margin: 8px auto 0;
+  }
+  .btn:hover:not([disabled]){
+    width: 42%;
+    background: rgb(246, 214, 87);
+    color: #fff;
+  }
+  .btn:disabled{
+    cursor:default;
+  }
+}
+@media screen and (max-height:1024px) {
+  .game p{
+    font-size: 15px;
+  }
+}
