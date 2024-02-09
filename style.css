@@ -194,6 +194,10 @@ button{
     font-size: 12px;
     height: 40px;
   }
+  .btn{
+    color: rgba(85, 25, 141, 0.803);
+    background: #fff;
+  }
   #next{
     width: 90px;
     font-size: 12px;
